@@ -1,9 +1,6 @@
 <?php
 
 use Tomahawk\HttpKernel\Kernel;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\Routing\Matcher\UrlMatcher;
-use Symfony\Component\HttpFoundation\Response;
 
 class AppKernel extends Kernel
 {
@@ -17,5 +14,13 @@ class AppKernel extends Kernel
         );
 
         return $bundles;
+    }
+
+    public function registerMiddleware()
+    {
+        return array(
+            new \Tomahawk\HttpCore\Middleware\Response(),
+            new \Tomahawk\Session\Middleware\Session()
+        );
     }
 }
