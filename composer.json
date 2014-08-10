@@ -1,0 +1,37 @@
+
+{
+    "name": "tomahawk/standard",
+    "license": "MIT",
+    "type": "project",
+    "description": "The \"Tomahawk Standard\" distribution",
+    "autoload": {
+        "psr-4": {
+            "TomahawkStandard\\": "app/TomahawkStandard/",
+            "": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.3.3",
+        "tomahawk/framework": "dev-develop"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.0",
+        "phpunit/phpunit": "3.7.*"
+
+    },
+    "scripts": {
+        "post-root-package-install": [
+        ],
+        "post-install-cmd": [
+        ],
+        "post-update-cmd": [
+        ]
+    },
+    "config": {
+        "bin-dir": "bin"
+    },
+    "extra": {
+        "tomahawk-app-dir": "app",
+        "tomahawk-web-dir": "public"
+    }
+}
