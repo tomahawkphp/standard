@@ -1,0 +1,6 @@
+.idea
+./vendor
+./bin
+composer.lock
+./app/storage/cache/*
+./app/storage/logs/*
