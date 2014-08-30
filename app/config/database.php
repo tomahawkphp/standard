@@ -6,6 +6,11 @@ return array(
 
     'enabled' => true,
 
+    /*
+     * Fetch Mode
+     */
+    'fetch'   => \PDO::FETCH_CLASS,
+
     'connections' => array(
 
         'default2' => array(

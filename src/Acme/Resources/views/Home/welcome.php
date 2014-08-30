@@ -1,1 +1,1 @@
-Hello <?php echo $name ?> from Acme
+Welcome to TomahawkPHP

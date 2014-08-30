@@ -13,6 +13,10 @@ class AppKernel extends Kernel
             new \Acme\AcmeBundle()
         );
 
+        if ($this->getEnvironment() === 'dev') {
+            $bundles[] = new \Tomahawk\Bundle\WebProfilerBundle\WebProfilerBundle();
+        }
+
         return $bundles;
     }
 

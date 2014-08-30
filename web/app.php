@@ -1,20 +1,13 @@
 <?php
 
-error_reporting(-1);
-ini_set('display_errors', 'On');
-
 use Symfony\Component\HttpFoundation\Request;
-use Whoops\Handler\PrettyPageHandler;
-use Symfony\Component\Debug\Debug;
+
+error_reporting(-1);
+ini_set('display_errors', 'Off');
+define('TOMAHAWKPHP_START', time());
 
 require_once __DIR__ . '/../app/autoload.php';
 require_once __DIR__.'/../app/AppKernel.php';
-
-$whoops = new \Whoops\Run;
-$whoops->pushHandler(new PrettyPageHandler);
-$whoops->register();
-
-//Debug::enable();
 
 $kernel = new AppKernel('prod', false);
 
