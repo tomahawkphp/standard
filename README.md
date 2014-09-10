@@ -12,6 +12,8 @@ using TomahawkPHP.
 As TomahawkPHP uses [Composer][2] to manage its dependencies, the recommended way
 to create a new project is to use it.
 
+Get one of the releases from [here][1].
+
 If you don't have Composer yet, download it following the instructions on
 http://getcomposer.org/ or just run the following command:
 
@@ -24,4 +26,4 @@ following command:
 
 
 [1]: https://github.com/tomahawkphp/standard/releases
-[2]:  http://getcomposer.org/
+[2]: http://getcomposer.org/
