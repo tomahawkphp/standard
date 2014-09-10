@@ -10,6 +10,7 @@ class AppKernel extends Kernel
         $bundles = array(
             new \Tomahawk\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Tomahawk\Bundle\GeneratorBundle\GeneratorBundle(),
+            new \Tomahawk\Bundle\MigrationsBundle\MigrationsBundle(),
             new \Acme\AcmeBundle()
         );
 
