@@ -9,6 +9,11 @@ return array(
      *      array
      *      database
      *      filesystem
+     *      apc
+     *      redis
+     *      xcache
+     *      memcache
+     *      memcached
      *
      */
     'driver' => 'array',
@@ -27,5 +32,5 @@ return array(
     /*
      * Filesystem
      */
-    'directory'        => __DIR__ .'/../storage/cache',
+    'directory' => __DIR__ .'/../storage/cache',
 );
