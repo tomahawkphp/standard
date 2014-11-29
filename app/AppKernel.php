@@ -11,6 +11,8 @@ class AppKernel extends Kernel
             new \Tomahawk\Bundle\FrameworkBundle\FrameworkBundle(),
             new \Tomahawk\Bundle\GeneratorBundle\GeneratorBundle(),
             new \Tomahawk\Bundle\MigrationsBundle\MigrationsBundle(),
+            new \Tomahawk\Bundle\DoctrineBundle\DoctrineBundle(),
+            new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \Acme\AcmeBundle()
         );
 
