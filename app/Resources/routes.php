@@ -8,6 +8,6 @@ use Symfony\Component\HttpFoundation\Request;
 $router = new Router();
 $router->setRoutes(new RouteCollection());
 
-$router->get('/', 'home', 'Acme\\Controller\\HomeController::homeAction');
+$router->get('/', 'home', 'MyPackage\\Controller\\HomeController::homeAction');
 
 return $router->getRoutes();

@@ -6,13 +6,12 @@
     "description": "The \"Tomahawk Standard\" distribution",
     "autoload": {
         "psr-4": {
-            "TomahawkStandard\\": "app/TomahawkStandard/",
             "": "src/"
         }
     },
     "require": {
         "php": ">=5.3.3",
-        "tomahawk/framework": "1.0.0-a3"
+        "tomahawk/framework": "1.0.0"
     },
     "require-dev": {
         "mockery/mockery": "0.8.0",
@@ -34,6 +33,6 @@
     "minimum-stability" : "stable",
     "extra": {
         "tomahawk-app-dir": "app",
-        "tomahawk-web-dir": "public"
+        "tomahawk-web-dir": "web"
     }
 }

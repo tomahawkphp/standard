@@ -4,7 +4,6 @@ use Tomahawk\HttpKernel\Kernel;
 
 class AppKernel extends Kernel
 {
-
     public function registerBundles()
     {
         $bundles = array(
@@ -13,7 +12,7 @@ class AppKernel extends Kernel
             new \Tomahawk\Bundle\MigrationsBundle\MigrationsBundle(),
             new \Tomahawk\Bundle\DoctrineBundle\DoctrineBundle(),
             new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
-            new \Acme\AcmeBundle()
+            new \MyPackage\Mybundle()
         );
 
         if ($this->getEnvironment() === 'dev') {
@@ -26,7 +25,8 @@ class AppKernel extends Kernel
     public function registerMiddleware()
     {
         return array(
-            new \Tomahawk\HttpCore\Middleware\Response(),
+            new \Tomahawk\HttpCore\Middleware\StringResponse(),
+            new \Tomahawk\HttpCore\Middleware\HeaderCookies(),
             new \Tomahawk\Session\Middleware\Session()
         );
     }

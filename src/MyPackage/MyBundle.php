@@ -1,10 +1,10 @@
 <?php
 
-namespace Acme;
+namespace MyPackage;
 
 use Tomahawk\HttpKernel\Bundle\Bundle;
 
-class AcmeBundle extends Bundle
+class MyBundle extends Bundle
 {
 
 }
