@@ -13,6 +13,6 @@ return array(
     'http_port'  => 8182,
     'https_port' => 443,
 
-    'ssl'       => true //Used when generating URLs to override https
+    'ssl'       => true, //Used when generating URLs to override https
 
 );
