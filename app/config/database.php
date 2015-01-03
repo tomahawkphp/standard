@@ -2,7 +2,7 @@
 
 return array(
 
-    'default' => 'default2',
+    'default' => 'default',
 
     'enabled' => true,
 
@@ -13,7 +13,7 @@ return array(
 
     'connections' => array(
 
-        'default2' => array(
+        'default' => array(
             'driver'    => 'mysql',
             'host'      => 'localhost',
             'port'      => '3306',
