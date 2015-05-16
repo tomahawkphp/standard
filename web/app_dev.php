@@ -15,8 +15,6 @@ $whoops = new \Whoops\Run;
 $whoops->pushHandler(new PrettyPageHandler());
 $whoops->register();
 
-//Debug::enable();
-
 $kernel = new AppKernel('dev', true);
 
 $request = Request::createFromGlobals();
