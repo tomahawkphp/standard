@@ -24,10 +24,12 @@ class AppKernel extends Kernel
 
     public function registerMiddleware()
     {
-        return array(
+        $middlewares = array(
             new \Tomahawk\HttpCore\Middleware\StringResponse(),
             new \Tomahawk\HttpCore\Middleware\HeaderCookies(),
             new \Tomahawk\Session\Middleware\Session()
         );
+
+        return $middlewares;
     }
 }
