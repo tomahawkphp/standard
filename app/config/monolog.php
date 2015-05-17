@@ -10,6 +10,6 @@ return array (
     /*
      * Name of log file
      */
-    'name' => 'tomahawk_' . date('Y_m_d'),
+    'name' => 'tomahawk.log',
 
 );
