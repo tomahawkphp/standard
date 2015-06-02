@@ -11,5 +11,4 @@ class HomeController extends Controller
     {
         return $this->renderView('MyBundle:Home:welcome');
     }
-
 }
