@@ -10,6 +10,9 @@ return array(
     // eloquent, database or doctrine
     'handler' => 'doctrine',
 
+    // CSRF Token Name
+    'csrf_token_name' => '_csrf_token',
+
     'handlers' => array(
         'doctrine' => array(
             'model' => 'MyPackage\Models\UserDoctrine',
