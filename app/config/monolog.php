@@ -5,7 +5,7 @@ return array (
     /*
      * Directory to log to
      */
-    'path' => __DIR__ . '/../storage/logs',
+    'path' => __DIR__ . '/../storage/logs/',
 
     /*
      * Name of log file
