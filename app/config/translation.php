@@ -2,7 +2,7 @@
 
 return array(
 
-    'locale' => 'fr_DR',
+    'locale' => 'en_GB',
 
     'fallback_locale' => 'en_GB',
 

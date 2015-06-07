@@ -5,7 +5,8 @@ return array(
     /*
      * Used by the URL Generator via the RequestContext class
      */
-    'base_url' => '',
+
+    'base_url' => '/app_dev.php',
 
     'host'     => 'standard.devbox.com',
 

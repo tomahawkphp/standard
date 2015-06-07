@@ -1,5 +1,8 @@
 <?php
 
+/*
+ * Config for use with Doctrine
+ */
 return array(
 
     /*

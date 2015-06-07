@@ -3,6 +3,8 @@
 return array(
 
     /*
+     * Transport to use for sending emails
+     *
      * stmp. sendmail, mail or gmail
      */
     'transport' => 'stmp',

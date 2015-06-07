@@ -14,12 +14,6 @@ return array(
      */
     'driver'           => 'cookie',
 
-    /*
-     * Enable Sessions
-     */
-    'enabled' => true,
-
-
     'session_name'     => 'tomahawk_session',
 
     /*

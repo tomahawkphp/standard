@@ -7,8 +7,12 @@ return array(
     //'key'   => '___________ENTER_A_KEY__________',
     'key'   => 'fJ3PD12u6603aHmg0Ncuc3w1VI3AeiQI', //http://randomkeygen.com/
 
-    // eloquent, database or doctrine
-    'handler' => 'doctrine',
+    /*
+     * What handler to use for Auth
+     *
+     * eloquent, database or doctrine
+     */
+    'handler' => 'eloquent',
 
     // CSRF Token Name
     'csrf_token_name' => '_csrf_token',

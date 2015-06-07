@@ -1,9 +1,13 @@
 <?php
 
+/*
+ * Config for use with the Illuminate Database Component (Laravel)
+ */
 return array(
 
     'default' => 'default',
 
+    // Whether to load Laravel services etc
     'enabled' => true,
 
     /*
@@ -11,6 +15,9 @@ return array(
      */
     'fetch'   => \PDO::FETCH_CLASS,
 
+    /*
+     * All Connections
+     */
     'connections' => array(
 
         'default' => array(
