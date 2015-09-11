@@ -23,6 +23,9 @@ return array(
 
             // Username field
             'username'   => 'username',
+
+            // Password field
+            'password'   => 'password',
         ),
         'database' => array(
             'table' => 'users',
@@ -41,6 +44,12 @@ return array(
         ),
         'eloquent' => array(
             'model' => 'MyPackage\Models\User',
+
+            // Username field
+            'username'   => 'username',
+
+            // Password field
+            'password'   => 'password',
         ),
     ),
 
