@@ -1,56 +1,35 @@
 <?php
 
-return array(
-    /*
-     * Application Key
-     */
-    //'key'   => '___________ENTER_A_KEY__________',
-    'key'   => 'fJ3PD12u6603aHmg0Ncuc3w1VI3AeiQI', //http://randomkeygen.com/
+return [
 
     /*
-     * What handler to use for Auth
-     *
-     * eloquent, database or doctrine
+     * CSRF token name
      */
-    'handler' => 'eloquent',
-
-    // CSRF Token Name
     'csrf_token_name' => '_csrf_token',
 
-    'handlers' => array(
-        'doctrine' => array(
-            'model' => 'MyPackage\Models\UserDoctrine',
+    /*
+     * Default provider to use
+     */
+    'provider' => 'memory',
 
-            // Username field
+
+    /*
+     * Available providers and settings
+     */
+    'providers' => [
+        'memory' => [
+            'users' => [
+                'admin' => [
+                    // Password is mypasswordbaby
+                    'password' => '$2y$10$A21VGSNYOFlNZaavgTs52.Y2cKnxmAf6KfL/RiVNsHE1TGT3ZGTwC',
+                ]
+            ]
+        ],
+        'doctrine' => [
+            'service'    => 'authentication.provider.doctrine',
+            'user_class' => 'MyPackage\\Entity\\User',
             'username'   => 'username',
+        ]
 
-            // Password field
-            'password'   => 'password',
-        ),
-        'database' => array(
-            'table' => 'users',
-
-            // Primary key field
-            'key'   => 'id',
-
-            // Username field
-            'username'   => 'username',
-
-            // Password field
-            'password'   => 'password',
-
-            // Connection to use
-            'connection' => 'default',
-        ),
-        'eloquent' => array(
-            'model' => 'MyPackage\Models\User',
-
-            // Username field
-            'username'   => 'username',
-
-            // Password field
-            'password'   => 'password',
-        ),
-    ),
-
-);
+    ]
+];

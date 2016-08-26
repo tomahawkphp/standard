@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
      * Used by the URL Generator via the RequestContext class
@@ -8,13 +8,14 @@ return array(
 
     'base_url' => '/app_dev.php',
 
-    'host'     => 'standard.devbox.com',
+    'host'     => 'localhost',
 
     'scheme'   => 'http',
 
     'http_port'  => 8182,
+
     'https_port' => 443,
 
     'ssl'       => true, //Used when generating URLs to override https
 
-);
+];

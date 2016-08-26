@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome to TomahawkPHP 2.0!</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
+
+    <style>
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            color: #B0BEC5;
+            display: table;
+            font-weight: 100;
+            font-family: 'Lato';
+        }
+
+        p {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-weight: normal;
+        }
+
+        .container {
+            text-align: center;
+            /*display: table-cell;
+            vertical-align: middle;*/
+        }
+
+        /*.content {
+            text-align: center;
+            display: inline-block;
+        }*/
+
+        .title {
+            font-size: 26px;
+            margin: 20px 0;
+        }
+
+        .info-box {
+            border: 1px solid #ececec;
+            padding: 20px;
+            border-radius: 3px;
+            width: 60%;
+            margin: 10px auto;
+            text-align: left;
+        }
+
+
+        .info-box h2 {
+            margin: 10px 0;
+        }
+
+        p {
+            color: #444444;
+        }
+
+        code {
+            color: #ca0000;
+            font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="content">
+        <div class="title">
+            <h1>
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEUAAAB6CAYAAADpoZ5RAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEimlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS40LjAiPgogICA8cmRmOlJERiB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiPgogICAgICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgICAgICAgICB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIKICAgICAgICAgICAgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiCiAgICAgICAgICAgIHhtbG5zOnRpZmY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vdGlmZi8xLjAvIgogICAgICAgICAgICB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iPgogICAgICAgICA8eG1wTU06RGVyaXZlZEZyb20gcmRmOnBhcnNlVHlwZT0iUmVzb3VyY2UiPgogICAgICAgICAgICA8c3RSZWY6aW5zdGFuY2VJRD54bXAuaWlkOmZhZThmMGFmLTc3NWQtNGY4Yy1iNmM2LTY1Njg1ZjZlZjQ3NTwvc3RSZWY6aW5zdGFuY2VJRD4KICAgICAgICAgICAgPHN0UmVmOmRvY3VtZW50SUQ+eG1wLmRpZDpmYWU4ZjBhZi03NzVkLTRmOGMtYjZjNi02NTY4NWY2ZWY0NzU8L3N0UmVmOmRvY3VtZW50SUQ+CiAgICAgICAgIDwveG1wTU06RGVyaXZlZEZyb20+CiAgICAgICAgIDx4bXBNTTpEb2N1bWVudElEPnhtcC5kaWQ6ODU3NzkyMDQyNUUyMTFFNEFFNjZFQjY1NDJENDJGODM8L3htcE1NOkRv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">
+
+                <br>
+                Welcome to
+                TomahawkPHP 2.0!
+            </h1>
+
+
+        </div>
+
+        <div class="info-box">
+            <h2>Controller</h2>
+
+            <p>The controller <code>{{ controller_class }}</code> rendered this template.</p>
+
+        </div>
+
+        <div class="info-box">
+            <h2>Template</h2>
+
+            <p>The template rendered is called <code>{{ template_name }}</code> and can be found here:</p>
+            <code>{{ route_fp }}</code>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
      * Cache Drivers
@@ -9,7 +9,7 @@ return array(
      *      array
      *      database
      *      filesystem
-     *      apc
+     *      apcu
      *      redis
      *      xcache
      *      memcache
@@ -19,18 +19,12 @@ return array(
     'driver' => 'filesystem',
 
     /*
-     * Namespace - Used with doctrine cache
+     * Namespace - Used by doctrine cache
      */
     'namespace' => 'tomahawk_cache:',
 
     /*
-     * Enable Cache
-     */
-    'enabled' => true,
-
-
-    /*
      * Filesystem
      */
-    'directory' => __DIR__ .'/../storage/cache',
-);
+    'directory' => __DIR__ .'/../../var/cache/application',
+];

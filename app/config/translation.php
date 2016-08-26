@@ -1,15 +1,16 @@
 <?php
 
-return array(
+return [
 
     'locale' => 'en_GB',
 
     'fallback_locale' => 'en_GB',
 
-    'translation_dirs' => array(
-        __DIR__ .'/../Resources/Translations',
-    ),
+    'translation_dirs' => [
+        dirname(__DIR__) .'/Resources/Translations',
+    ],
 
-    'cache_dir' => __DIR__ .'/../storage/translation_cache',
+    // False or cache directory
+    'cache' => dirname(__DIR__) .'/../var/cache/translations',
 
-);
+];

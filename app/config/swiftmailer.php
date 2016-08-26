@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
      * Transport to use for sending emails
@@ -25,4 +25,4 @@ return array(
     'username'  => 'my@email.com',
     'password'  => 'password',
 
-);
+];

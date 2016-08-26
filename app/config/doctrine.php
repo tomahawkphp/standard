@@ -1,9 +1,6 @@
 <?php
 
-/*
- * Config for use with Doctrine
- */
-return array(
+return [
 
     /*
      * Cache
@@ -43,7 +40,22 @@ return array(
     /*
      * Mapping files directory
      */
-    'mapping_directories' => array(__DIR__ . '/../Resources/Doctrine/mappings'),
+    'mapping_directories' => [__DIR__ . '/../Resources/Doctrine/mappings'],
+
+    /*
+     * Migrations directory
+     */
+    'migrations_directory' => __DIR__ . '/../Resources/Doctrine/migrations',
+
+    /*
+     * Migrations namespace
+     */
+    'migration_namespace' => 'Migrations',
+
+    /*
+     * Migrations name
+     */
+    'migration_name' => 'migrations',
 
     /*
      * Default connection
@@ -53,31 +65,31 @@ return array(
     /*
      * All connections
      */
-    'connections' => array(
-        'default' => array(
+    'connections' => [
+        'default' => [
             /*
              * Name of service in container
              */
             'service'      => 'doctrine.connection.default',
             'wrapperClass' => 'Doctrine\DBAL\Connections\MasterSlaveConnection',
             'driver'       => 'pdo_mysql',
-            'master'       => array(
+            'master'       => [
                 'host'      => 'localhost',
                 'port'      => '3306',
                 'dbname'    => 'tomahawk',
                 'user'      => 'root',
                 'password'  => '',
-            ),
-            'slaves' => array(
-                array(
+            ],
+            'slaves' => [
+                [
                     'host'      => 'localhost',
                     'port'      => '3306',
                     'dbname'    => 'tomahawk',
                     'user'      => 'root',
                     'password'  => '',
-                )
-            ),
-        )
-    ),
-);
+                ]
+            ],
+        ]
+    ],
+];
 

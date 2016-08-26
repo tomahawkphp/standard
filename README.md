@@ -1,29 +1,37 @@
-TomahawkPHP Standard Edition
--------------------------
+# TomahawkPHP 2.0 Standard Edition - Currently a WIP
 
-Welcome to the TomahawkPHP Standard Edition - a fully-functional TomahawkPHP application built on top of Symfony2 Components that you can use as the skeleton for your new applications.
+Welcome to the TomahawkPHP Standard Edition - a fully-functional TomahawkPHP application built on top of Symfony3 Components that you can use as the skeleton for your new applications.
 
-This document contains information on how to download, install, and start
-using TomahawkPHP.
+This document contains information on how to download, install, and start using TomahawkPHP.
 
-1) Installing the Standard Edition
-----------------------------------
+## Installation
 
-As TomahawkPHP uses [Composer][2] to manage its dependencies, the recommended way
-to create a new project is to use it.
+For full installation instructions please go [here][3] as below will provide quick steps to get setup.
 
-Get one of the releases from [here][1].
+To install TomahawkPHP you will need to have Composer installed which you can download [here][2].
 
-If you don't have Composer yet, download it following the instructions on
-http://getcomposer.org/ or just run the following command:
+### Steps
 
-    curl -s http://getcomposer.org/installer | php
+1) Get one of the releases of TomahawkPHP from [here][1].
 
-Download composer (see above) and run the
-following command:
+2) Run the following command in the directory:
 
     php composer.phar install
+    
+## Official Documentation
 
+Documentation for the framework can be found on the [TomahawkPHP website](http://www.tomahawkphp.com/docs).
+
+## Requirements
+
+- PHP 5.6+ (PHP 7 is preferred).
+- PDO extension.
+- MbString Extension.
+
+## License
+
+The TomahawkPHP framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
 
 [1]: https://github.com/tomahawkphp/standard/releases
 [2]: http://getcomposer.org/
+[3]: http://www.tomahawkphp.com/docs/installation

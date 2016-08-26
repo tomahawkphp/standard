@@ -1,19 +1,25 @@
 <?php
 
-return array(
+return [
 
     /*
      * Used by the URL Generator via the RequestContext class
      */
     'base_url' => '',
 
-    'host'     => 'standard.devbox.com',
+    /*
+     *
+     */
+    'host' => 'example.com',
 
-    'scheme'   => 'http',
+    'scheme' => 'http',
 
-    'http_port'  => 8182,
+    'http_port'  => 80,
+
     'https_port' => 443,
 
-    'ssl'       => true, //Used when generating URLs to override https
-
-);
+    /**
+     * This option should only be used if you can't setup an SSL certificate locally
+     */
+    'ssl' => true, //Used when generating URLs to override https
+];

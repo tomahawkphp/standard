@@ -9,13 +9,8 @@
         }
     },
     "require": {
-        "php": ">=5.3.3",
-        "tomahawk/framework": "1.4.*"
-    },
-    "require-dev": {
-        "mockery/mockery": "0.8.0",
-        "phpunit/phpunit": "4.6.*"
-
+        "php": ">=5.6.4",
+        "tomahawk/framework": "2.0.0-b2"
     },
     "config": {
         "bin-dir": "bin"

@@ -1,14 +1,21 @@
 <?php
 
-return array(
+return [
 
-    'trusted_proxies' => array(
+    /*
+     * Trust Proxies
+     */
+    'trusted_proxies' => [],
 
-    ),
-
+    /*
+     * Http Method Override
+     *
+     * Allows the use of PUT, DELETE, OPTIONS etc
+     */
     'http_method_override' => false,
 
-    'trusted_hosts' => array(
-
-    ),
-);
+    /*
+     * Trust hosts
+     */
+    'trusted_hosts' => [],
+];

@@ -1,6 +1,6 @@
 <?php
 
-return array(
+return [
 
     /*
      * Session Drivers
@@ -12,14 +12,14 @@ return array(
      *      filesystem
      *
      */
-    'driver'           => 'cookie',
+    'driver'           => 'filesystem',
 
     'session_name'     => 'tomahawk_session',
 
     /*
      * Filesystem
      */
-    'directory'        => __DIR__ .'/../storage/sessions',
+    'directory'        => __DIR__ .'/../../var/sessions',
 
     /*
      * Cookie
@@ -39,4 +39,4 @@ return array(
     'data_column'   => 'data',
     'date_column'   => 'date'
 
-);
+];

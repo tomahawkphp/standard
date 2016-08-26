@@ -1,9 +1,5 @@
 <?php
 
-use Tomahawk\Routing\Router;
-
-$router = new Router();
-
-$router->get('/', 'home', 'MyPackage\\Controller\\HomeController::homeAction');
+$router = new Tomahawk\Routing\Router();
 
 return $router->getRoutes();
