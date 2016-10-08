@@ -2,8 +2,6 @@
 
 return [
 
-    'charset' => 'UTF-8',
-
     // Twig specific settings
     'twig' => [
 
