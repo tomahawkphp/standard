@@ -1,4 +1,4 @@
-# TomahawkPHP 2.0 Standard Edition - Currently a WIP
+# TomahawkPHP 2.0 Standard Edition
 
 Welcome to the TomahawkPHP Standard Edition - a fully-functional TomahawkPHP application built on top of Symfony3 Components that you can use as the skeleton for your new applications.
 
