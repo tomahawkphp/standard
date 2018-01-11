@@ -20,7 +20,6 @@ class AppKernel extends Kernel
             new \Tomahawk\Bundle\SwiftmailerBundle\SwiftmailerBundle(),
             new \Tomahawk\Bundle\CSRFBundle\CSRFBundle(),
             new \MyApplication\Bundle\MyBundle\MyBundle(),
-            new \TestApplication\Bundle\TestBundle\TestBundle(),
         ];
 
         if ('dev' === $this->getEnvironment()) {
